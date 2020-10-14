@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.8.5 on darwin)" generated="20201013 19:16:38.485" rpa="false">
+<suite id="s1" name="Exercices" source="/Users/coronadouglass 1/robot-workspace/ExCours5/TestCase/Exercices.robot">
+<test id="s1-t1" name="TC_01_LoginTest">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>%{PATH}</arg>
+</arguments>
+<msg timestamp="20201013 19:16:38.909" level="INFO">/Library/Frameworks/Python.framework/Versions/3.8/bin:/usr/local/bin:/usr/local/sbin:/coronadouglass.rvm/gems/ruby-2.3.0/bin:/coronadouglass.rvm/gems/ruby-2.3.0@global/bin:/coronadouglass.rvm/rubies/ruby-2.3.0/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/coronadouglass.rvm/bin:/coronadouglass.rvm/bin:~/bin::/coronadouglass.rvm/bin:/usr/local/bin</msg>
+<status status="PASS" starttime="20201013 19:16:38.908" endtime="20201013 19:16:38.909"></status>
+</kw>
+<kw name="Append To Environment Variable" library="OperatingSystem">
+<doc>Appends given ``values`` to environment variable ``name``.</doc>
+<arguments>
+<arg>PATH</arg>
+<arg>/usr/local/bin</arg>
+</arguments>
+<msg timestamp="20201013 19:16:38.909" level="INFO">Environment variable 'PATH' set to value '/Library/Frameworks/Python.framework/Versions/3.8/bin:/usr/local/bin:/usr/local/sbin:/coronadouglass.rvm/gems/ruby-2.3.0/bin:/coronadouglass.rvm/gems/ruby-2.3.0@global/bin:/coronadouglass.rvm/rubies/ruby-2.3.0/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/coronadouglass.rvm/bin:/coronadouglass.rvm/bin:~/bin::/coronadouglass.rvm/bin:/usr/local/bin:/usr/local/bin'.</msg>
+<status status="PASS" starttime="20201013 19:16:38.909" endtime="20201013 19:16:38.909"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>%{PATH}</arg>
+</arguments>
+<msg timestamp="20201013 19:16:38.910" level="INFO">/Library/Frameworks/Python.framework/Versions/3.8/bin:/usr/local/bin:/usr/local/sbin:/coronadouglass.rvm/gems/ruby-2.3.0/bin:/coronadouglass.rvm/gems/ruby-2.3.0@global/bin:/coronadouglass.rvm/rubies/ruby-2.3.0/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/coronadouglass.rvm/bin:/coronadouglass.rvm/bin:~/bin::/coronadouglass.rvm/bin:/usr/local/bin:/usr/local/bin</msg>
+<status status="PASS" starttime="20201013 19:16:38.910" endtime="20201013 19:16:38.910"></status>
+</kw>
+<kw name="LoginKeyWords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://opensource-demo.orangehrmlive.com/index.php/auth/login</arg>
+<arg>gc</arg>
+</arguments>
+<msg timestamp="20201013 19:16:38.911" level="INFO">Opening browser 'gc' to base url 'https://opensource-demo.orangehrmlive.com/index.php/auth/login'.</msg>
+<status status="PASS" starttime="20201013 19:16:38.911" endtime="20201013 19:16:44.315"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20201013 19:16:44.318" endtime="20201013 19:16:44.504"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=txtUsername</arg>
+<arg>Admin</arg>
+</arguments>
+<msg timestamp="20201013 19:16:44.505" level="INFO">Typing text 'Admin' into text field 'id=txtUsername'.</msg>
+<status status="PASS" starttime="20201013 19:16:44.504" endtime="20201013 19:16:44.681"></status>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<status status="PASS" starttime="20201013 19:16:44.681" endtime="20201013 19:16:44.682"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=txtPassword</arg>
+<arg>admin123</arg>
+</arguments>
+<msg timestamp="20201013 19:16:44.683" level="INFO">Typing text 'admin123' into text field 'id=txtPassword'.</msg>
+<status status="PASS" starttime="20201013 19:16:44.682" endtime="20201013 19:16:53.941"></status>
+</kw>
+<status status="PASS" starttime="20201013 19:16:38.910" endtime="20201013 19:16:53.941"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20201013 19:16:54.943" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20201013 19:16:53.942" endtime="20201013 19:16:54.943"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=txtUsername</arg>
+<arg>Admin</arg>
+</arguments>
+<msg timestamp="20201013 19:16:54.944" level="INFO">Typing text 'Admin' into text field 'id=txtUsername'.</msg>
+<status status="PASS" starttime="20201013 19:16:54.944" endtime="20201013 19:17:04.044"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>id=btnLogin</arg>
+</arguments>
+<msg timestamp="20201013 19:17:04.045" level="INFO">Clicking button 'id=btnLogin'.</msg>
+<status status="PASS" starttime="20201013 19:17:04.045" endtime="20201013 19:17:14.838"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20201013 19:17:19.840" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20201013 19:17:14.838" endtime="20201013 19:17:19.841"></status>
+</kw>
+<kw name="LogoutKeyWords">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id=welcome</arg>
+</arguments>
+<msg timestamp="20201013 19:17:19.842" level="INFO">Clicking element 'id=welcome'.</msg>
+<status status="PASS" starttime="20201013 19:17:19.842" endtime="20201013 19:17:25.925"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20201013 19:17:28.926" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20201013 19:17:25.925" endtime="20201013 19:17:28.927"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>link=Logout</arg>
+</arguments>
+<msg timestamp="20201013 19:17:28.927" level="INFO">Clicking element 'link=Logout'.</msg>
+<status status="PASS" starttime="20201013 19:17:28.927" endtime="20201013 19:17:35.464"></status>
+</kw>
+<status status="PASS" starttime="20201013 19:17:19.841" endtime="20201013 19:17:35.464"></status>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://www.google.com</arg>
+<arg>gc</arg>
+</arguments>
+<msg timestamp="20201013 19:17:35.466" level="INFO">Opening browser 'gc' to base url 'https://www.google.com'.</msg>
+<status status="PASS" starttime="20201013 19:17:35.465" endtime="20201013 19:17:43.324"></status>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20201013 19:17:43.325" endtime="20201013 19:17:49.521"></status>
+</kw>
+<status status="PASS" starttime="20201013 19:16:38.906" endtime="20201013 19:17:49.522" critical="yes"></status>
+</test>
+<test id="s1-t2" name="TC_02_GoBackTest">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>%{PATH}</arg>
+</arguments>
+<msg timestamp="20201013 19:17:49.525" level="INFO">/Library/Frameworks/Python.framework/Versions/3.8/bin:/usr/local/bin:/usr/local/sbin:/coronadouglass.rvm/gems/ruby-2.3.0/bin:/coronadouglass.rvm/gems/ruby-2.3.0@global/bin:/coronadouglass.rvm/rubies/ruby-2.3.0/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/coronadouglass.rvm/bin:/coronadouglass.rvm/bin:~/bin::/coronadouglass.rvm/bin:/usr/local/bin:/usr/local/bin</msg>
+<status status="PASS" starttime="20201013 19:17:49.524" endtime="20201013 19:17:49.525"></status>
+</kw>
+<kw name="Append To Environment Variable" library="OperatingSystem">
+<doc>Appends given ``values`` to environment variable ``name``.</doc>
+<arguments>
+<arg>PATH</arg>
+<arg>/usr/local/bin</arg>
+</arguments>
+<msg timestamp="20201013 19:17:49.526" level="INFO">Environment variable 'PATH' set to value '/Library/Frameworks/Python.framework/Versions/3.8/bin:/usr/local/bin:/usr/local/sbin:/coronadouglass.rvm/gems/ruby-2.3.0/bin:/coronadouglass.rvm/gems/ruby-2.3.0@global/bin:/coronadouglass.rvm/rubies/ruby-2.3.0/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/coronadouglass.rvm/bin:/coronadouglass.rvm/bin:~/bin::/coronadouglass.rvm/bin:/usr/local/bin:/usr/local/bin:/usr/local/bin'.</msg>
+<status status="PASS" starttime="20201013 19:17:49.525" endtime="20201013 19:17:49.526"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>%{PATH}</arg>
+</arguments>
+<msg timestamp="20201013 19:17:49.526" level="INFO">/Library/Frameworks/Python.framework/Versions/3.8/bin:/usr/local/bin:/usr/local/sbin:/coronadouglass.rvm/gems/ruby-2.3.0/bin:/coronadouglass.rvm/gems/ruby-2.3.0@global/bin:/coronadouglass.rvm/rubies/ruby-2.3.0/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/coronadouglass.rvm/bin:/coronadouglass.rvm/bin:~/bin::/coronadouglass.rvm/bin:/usr/local/bin:/usr/local/bin:/usr/local/bin</msg>
+<status status="PASS" starttime="20201013 19:17:49.526" endtime="20201013 19:17:49.526"></status>
+</kw>
+<kw name="LoginKeyWords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://opensource-demo.orangehrmlive.com/index.php/auth/login</arg>
+<arg>gc</arg>
+</arguments>
+<msg timestamp="20201013 19:17:49.528" level="INFO">Opening browser 'gc' to base url 'https://opensource-demo.orangehrmlive.com/index.php/auth/login'.</msg>
+<status status="PASS" starttime="20201013 19:17:49.527" endtime="20201013 19:17:56.762"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20201013 19:17:56.763" endtime="20201013 19:17:59.914"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=txtUsername</arg>
+<arg>Admin</arg>
+</arguments>
+<msg timestamp="20201013 19:17:59.915" level="INFO">Typing text 'Admin' into text field 'id=txtUsername'.</msg>
+<status status="PASS" starttime="20201013 19:17:59.914" endtime="20201013 19:18:09.097"></status>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<status status="PASS" starttime="20201013 19:18:09.097" endtime="20201013 19:18:09.098"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=txtPassword</arg>
+<arg>admin123</arg>
+</arguments>
+<msg timestamp="20201013 19:18:09.099" level="INFO">Typing text 'admin123' into text field 'id=txtPassword'.</msg>
+<status status="PASS" starttime="20201013 19:18:09.098" endtime="20201013 19:18:18.246"></status>
+</kw>
+<status status="PASS" starttime="20201013 19:17:49.527" endtime="20201013 19:18:18.247"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>id=btnLogin</arg>
+</arguments>
+<msg timestamp="20201013 19:18:18.249" level="INFO">Clicking button 'id=btnLogin'.</msg>
+<status status="PASS" starttime="20201013 19:18:18.248" endtime="20201013 19:18:29.098"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20201013 19:18:32.100" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20201013 19:18:29.099" endtime="20201013 19:18:32.100"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>./Screenshots/captureTest.png</arg>
+</arguments>
+<msg timestamp="20201013 19:18:35.483" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/captureTest.png"&gt;&lt;img src="Screenshots/captureTest.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20201013 19:18:32.101" endtime="20201013 19:18:35.483"></status>
+</kw>
+<kw name="LogoutKeyWords">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id=welcome</arg>
+</arguments>
+<msg timestamp="20201013 19:18:35.486" level="INFO">Clicking element 'id=welcome'.</msg>
+<status status="PASS" starttime="20201013 19:18:35.485" endtime="20201013 19:18:41.574"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20201013 19:18:44.576" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20201013 19:18:41.575" endtime="20201013 19:18:44.576"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>link=Logout</arg>
+</arguments>
+<msg timestamp="20201013 19:18:44.577" level="INFO">Clicking element 'link=Logout'.</msg>
+<status status="PASS" starttime="20201013 19:18:44.577" endtime="20201013 19:18:51.249"></status>
+</kw>
+<status status="PASS" starttime="20201013 19:18:35.484" endtime="20201013 19:18:51.249"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>https://www.google.ca</arg>
+</arguments>
+<msg timestamp="20201013 19:18:51.250" level="INFO">Opening url 'https://www.google.ca'</msg>
+<status status="PASS" starttime="20201013 19:18:51.250" endtime="20201013 19:18:55.479"></status>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20201013 19:18:55.480" endtime="20201013 19:18:58.568"></status>
+</kw>
+<status status="PASS" starttime="20201013 19:17:49.523" endtime="20201013 19:18:58.569" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20201013 19:16:38.488" endtime="20201013 19:18:58.571"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" id="s1" name="Exercices">Exercices</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
