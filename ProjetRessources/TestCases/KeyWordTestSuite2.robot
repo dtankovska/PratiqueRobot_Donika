@@ -17,3 +17,12 @@ TC_001
     
     Open Browser and Maximize    ${browser}    ${url}
     
+TC_002
+    Log  %{PATH}
+
+    Append To Environment Variable    PATH    /usr/local/bin
+
+    Log  %{PATH}
+    Log To Console    Coucou!    
+    
+    
